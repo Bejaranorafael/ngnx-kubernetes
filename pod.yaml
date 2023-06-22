@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rafa-pod
+  labels:
+    app: mi-aplicacion
+spec:
+  containers:
+    - name: mi-contenedor
+      image: rafael
+      ports:
+        - containerPort: 80
+
+        #kubectl apply -f pod.yaml
+
